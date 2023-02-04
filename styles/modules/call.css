@@ -1,0 +1,38 @@
+.call {
+  background-image: url(../../img/cover_call.jpg);
+  background-repeat: no-repeat;
+  height: 110px;
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+}
+
+.call__wrapper {
+}
+.call__title {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-size: 40px;
+  line-height: 1.4;
+}
+.call_text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.call__button {
+  width: 260px;
+}
+
+.call__button:hover {
+  box-shadow: inset 260px 0 0 0 #319e75;
+}

@@ -1,0 +1,81 @@
+.work {
+  background-color: #2b2b2b;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.work__title {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-size: 40px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+}
+
+.work__text {
+  display: block;
+  max-width: 770px;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Merriweather", serif;
+  color: #ca9249;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  margin: 0 auto 60px;
+}
+
+.work__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 0 30px;
+}
+
+.work__card {
+  max-width: 560px;
+  padding: 45px 15px;
+  background-color: #fff;
+}
+
+.work__card-title {
+  font-weight: 900;
+  font-style: normal;
+  font-family: "Playfair Display", serif;
+  color: #122035;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0px;
+  margin-bottom: 20px;
+}
+
+.fiz::before {
+  content: "";
+  display: block;
+  background: url("../../img/fiz.png") no-repeat;
+  width: 55px;
+  height: 55px;
+  float: left;
+  margin: 0 6px 0 0;
+}
+
+.yr::before {
+  content: "";
+  display: block;
+  background: url("../../img/yr.png") no-repeat;
+  width: 55px;
+  height: 55px;
+  float: left;
+  margin: 0 6px 0 0;
+}
+
+.work__card-text {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
+  color: #2b2b2b;
+  font-size: 15px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+}

@@ -1,0 +1,11 @@
+@import "normalize.css";
+@import "fonts.css";
+@import "base.css";
+@import "vars.css";
+@import "./modules/header.css";
+@import "./modules/main-screen.css";
+@import "./modules/about.css";
+@import "./modules/call.css";
+@import "./modules/services.css";
+@import "./modules/work.css";
+@import "./modules/arbitr.css";

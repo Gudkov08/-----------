@@ -1,0 +1,136 @@
+.main-screen {
+}
+
+.main-screen__item {
+  background: center / cover no-repeat url("../../img/cover.jpg");
+  min-height: 740px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.main-screen__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2a2c2f;
+  opacity: 0.3;
+}
+
+.title__wrapper {
+  text-align: center;
+  z-index: 1;
+}
+
+.main-screen__title {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+
+.main-screen__subtitle {
+  font-family: "Playfair Display", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-size: 40px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  max-width: 960px;
+  margin-bottom: 15px;
+}
+
+.main-screen__text {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  margin-bottom: 45px;
+}
+
+.main-screen__button {
+  margin: auto;
+  margin-bottom: 90px;
+}
+
+.main-screen__cards {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.main-screen__cards-item {
+  width: 370px;
+  height: 250px;
+  border-top: 5px solid var(--green);
+  background-color: #2b2b2b;
+  list-style-type: none;
+  display: grid;
+  padding: 30px 15px;
+  grid-template-areas:
+    "img title"
+    ". text";
+  /* grid-template-columns: minmax(200px, 650px);
+grid-template-rows: repeat(4, auto); */
+  gap: 0 15px;
+  grid-template-rows: 50px auto;
+}
+
+.main-screen__cards-item-img1 {
+  grid-area: img;
+  width: 49px;
+  height: 49px;
+  background-image: url(../../img/mt-1855-icon01.png);
+  background-repeat: no-repeat;
+}
+
+.main-screen__cards-item-img2 {
+  grid-area: img;
+  width: 49px;
+  height: 49px;
+  background-image: url(../../img/mt-1855-icon02.png);
+  background-repeat: no-repeat;
+}
+
+.main-screen__cards-item-img3 {
+  grid-area: img;
+  width: 49px;
+  height: 49px;
+  background-image: url(../../img/mt-1855-icon03.png);
+  background-repeat: no-repeat;
+}
+
+.main-screen__cards-item-title {
+  grid-area: title;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  text-align: left;
+  align-self: center;
+}
+
+.main-screen__cards-item-text {
+  grid-area: text;
+  text-align: left;
+}

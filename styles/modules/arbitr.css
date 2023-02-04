@@ -1,0 +1,14 @@
+.arbitr {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.arbitr__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 0 30px;
+}
+
+.arbitr__list {
+  list-style: none;
+}

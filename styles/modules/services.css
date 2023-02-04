@@ -1,0 +1,44 @@
+.services {
+  padding: 45px 0 100px;
+  text-align: center;
+}
+
+.services__title {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Playfair Display", serif;
+  color: #383838;
+  font-size: 40px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+}
+
+.call__cards {
+  width: 1170px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  grid-template-rows: 1fr 1fr;
+  list-style: none;
+  gap: 10px 30px;
+}
+.call__border {
+  margin: 15px auto;
+}
+
+.call__img {
+  width: 300px;
+  height: 300px;
+  border: 2px solid var(--green);
+  margin-bottom: 20px;
+}
+
+.call__img-caption {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Inter", serif;
+  color: #383838;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
