@@ -1,0 +1,108 @@
+.footer {
+  padding: 15px 45px;
+  height: 100px;
+  background-color: #2b2b2b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.footer__left-container {
+  width: 370px;
+  display: flex;
+  align-items: center;
+}
+
+.footer__logo-link:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.footer__logo {
+  filter: sepia(100%);
+  margin-right: 40px;
+  width: 49px;
+  height: 49px;
+}
+
+.footer__name {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Playfair Display", serif;
+  color: var(--green);
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+}
+
+.footer__center-container {
+  width: 370px;
+  text-align: center;
+}
+
+.footer__link {
+  display: block;
+  text-decoration: none;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
+  color: var(--green);
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  position: relative;
+}
+
+.footer__link:hover {
+  opacity: 0.7;
+}
+
+.footer__right-container {
+  width: 370px;
+  text-align: right;
+}
+
+.footer__mail::before {
+  position: absolute;
+  content: "";
+  background-image: url(../../img/envelope-regular.svg);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  left: 44px;
+  top: 2px;
+}
+
+.footer__web::before {
+  position: absolute;
+  content: "";
+  background-image: url(../../img/globe-solid.svg);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  left: 44px;
+  top: 2px;
+}
+
+.footer__tel::before {
+  position: absolute;
+  content: "";
+  background-image: url(../../img/phone-volume-solid.svg);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  left: 165px;
+  top: 2px;
+}
+
+.footer__whatsapp::before {
+  position: absolute;
+  content: "";
+  background-image: url(../../img/whatsapp.svg);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  left: 165px;
+  top: 2px;
+}

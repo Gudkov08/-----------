@@ -37,7 +37,7 @@
   font-weight: 400;
   src: local("Playfair Display"),
     url("../fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf")
-      format("ttf");
+      format("truetype");
 }
 
 @font-face {
@@ -46,7 +46,7 @@
   font-weight: 900;
   src: local("Playfair Display"),
     url("../fonts/Playfair_Display/static/PlayfairDisplay-ExtraBold.ttf")
-      format("ttf");
+      format("truetype");
 }
 
 @font-face {
@@ -54,5 +54,13 @@
   font-style: italic;
   font-weight: 400;
   src: local("Merriweather"),
-    url("../fonts/Merriweather/Merriweather-Italic.ttf") format("ttf");
+    url("../fonts/Merriweather/Merriweather-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Merriweather"),
+    url("../fonts/Merriweather/Merriweather-BoldItalic.ttf") format("truetype");
 }
