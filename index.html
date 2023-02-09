@@ -116,7 +116,7 @@
       </div>
     </header>
 
-    <main class="page__section">
+    <main class="">
       <!--  section  main-screen-->
       <section class="main-screen" id="main-screen">
         <div class="main-screen__item">
@@ -348,6 +348,128 @@
           </div>
         </div>
       </section>
+
+      <!--  pros -->
+      <section class="pros">
+        <h2 class="work__title">Преимущества</h2>
+        <div class="about__left-side_border call__border"></div>
+        <div class="pros__wrapper">
+          <div class="pross__item">
+            <h3 class="pros__item-title pros__img1">Связи</h3>
+            <p class="pros__item-text">
+              Владеем обширным списком контактов экспертных организаций
+            </p>
+          </div>
+          <div class="pross__item">
+            <h3 class="pros__item-title pros__img2">Влияние</h3>
+            <p class="pros__item-text">
+              При необходимости привлекаем СМИ, вызываем общественный резонанс
+            </p>
+          </div>
+          <div class="pross__item">
+            <h3 class="pros__item-title pros__img3">Оперативность</h3>
+            <p class="pros__item-text">
+              Включаемся в процесс судопроизводства на любой стадии
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--  form -->
+      <section class="form__section">
+        <h2 class="services__title">Получить бесплатную консультацию</h2>
+        <div class="about__left-side_border call__border"></div>
+        <form class="form" action="send_mail.php" name="form" method="POST">
+          <fieldset class="form__set">
+            <label class="form__field">
+              <input
+                type="text"
+                class="form__input"
+                name="name"
+                id="form-name"
+                placeholder="Ваше имя *"
+                minlength="2"
+                maxlength="40"
+                required
+                pattern="[А-Яа-я]{1,50}|[А-Яа-я]{1,50}\s[А-Яа-я]{1,50}"
+                title="Ваше имя русскими буквами (большими или маленькими)"
+              />
+              <span class="form__input-error form-name-error"></span>
+            </label>
+            <label class="form__field">
+              <input
+                type="text"
+                class="form__input"
+                name="phone"
+                id="profile-name"
+                placeholder="Телефон *"
+                minlength="11"
+                maxlength="11"
+                required
+                pattern="[0-9]{11}"
+                title="11 цифр без дефисов и пробелов. Пример: 89173481541"
+
+              />
+              <span class="form__input-error form-tel-error"></span>
+            </label>
+            <label class="form__field">
+              <textarea class="form__input form__textarea" name="message" id="profile-description" placeholder="Ваш вопрос *" maxlength="400"></textarea>
+              </textarea>
+              <span class="form__input-error form-text-error"></span>
+            </label>
+            <button class="form__button" type="submit" aria-label="кнопка ОТПРАВИТЬ">
+              <span class=" ">ОТПРАВИТЬ</span>
+            </button>
+            <p class="form__submit-text">Спасибо за Ваше обращение! В течение дня я Вам перезвоню.</p>
+          </form>
+          </fieldset>
+        </form>
+      </section>
+
+      <!--  contacts -->
+      <section class="work">
+        <h2 class="work__title">КОНТАКТЫ</h2>
+        <div class="about__left-side_border call__border"></div>
+        <p class="work__text">
+          Обратитесь за профессиональной юридической помощью и получите решение
+          вашего вопроса
+        </p>
+        <div class="work__wrapper">
+          <div class="contacts__card">
+            <img
+              class="contacts__img"
+              src="./img/location-dot-solid.svg"
+              alt="АДРЕС"
+            />
+            <h3 class="work__card-title">АДРЕС</h3>
+            <div class="contacts__card-text">г.Волгоград,</div>
+            <div class="contacts__card-text">ул.Землянского, д.1</div>
+          </div>
+          <div class="contacts__card">
+            <img
+              class="contacts__img"
+              src="./img/envelope-regular.svg"
+              alt="EMAIL"
+            />
+
+            <h3 class="work__card-title">EMAIL</h3>
+            <div class="contacts__card-text">shurothka@yandex.ru</div>
+          </div>
+          <div class="contacts__card">
+            <img
+              class="contacts__img"
+              src="./img/phone-volume-solid.svg"
+              alt="ТЕЛЕФОН"
+            />
+
+            <h3 class="work__card-title">ТЕЛЕФОН</h3>
+            <div class="contacts__card-text">(8442) 980-990</div>
+            <div class="contacts__card-text">+7-917-338-09-90</div>
+          </div>
+        </div>
+      </section>
+
+      <!--  map -->
       <section class="map">
         <iframe
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa0cb4243e620b73120f38b8c606d821d8ad045cae067a4ed39493cc9db59fc6e&amp;source=constructor"

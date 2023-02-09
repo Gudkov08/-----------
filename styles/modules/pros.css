@@ -1,0 +1,73 @@
+.pros {
+  background: #2b2b2b;
+  padding: 45px 0;
+  text-align: center;
+}
+
+.pros__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 0 30px;
+}
+
+.pross__item {
+  max-width: 368px;
+}
+.pros__item-title {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Playfair Display", serif;
+  color: #be8f51;
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: 0px;
+  margin-bottom: 25px;
+  position: relative;
+  text-align: left;
+  padding-left: 90px;
+}
+
+.pros__item-text {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Merriweather", serif;
+  color: #be8f51;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  margin-bottom: 45px;
+  text-align: left;
+}
+
+.pros__img1::before {
+  position: absolute;
+  content: "";
+  background-image: url(../../img/mt-1855-icon01.png);
+  background-repeat: no-repeat;
+  width: 49px;
+  height: 49px;
+  left: 20px;
+  top: -6px;
+}
+
+.pros__img2::before {
+  position: absolute;
+  content: "";
+  background-image: url(../../img/mt-1855-icon02.png);
+  background-repeat: no-repeat;
+  width: 49px;
+  height: 49px;
+  left: 20px;
+  top: -6px;
+}
+
+.pros__img3::before {
+  position: absolute;
+  content: "";
+  background-image: url(../../img/mt-1855-icon03.png);
+  background-repeat: no-repeat;
+  width: 49px;
+  height: 49px;
+  left: 20px;
+  top: -6px;
+}
