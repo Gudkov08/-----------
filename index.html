@@ -18,7 +18,7 @@
     <header class="header" id="header">
       <div class="header__first-line">
         <button
-          class="button header__button"
+          class="button header__button button__popup"
           type="button"
           onclick="location.href='#'"
           aria-label="Бесплатная консультация"
@@ -134,7 +134,7 @@
             <button
               class="button header__button main-screen__button"
               type="button"
-              onclick="location.href='#'"
+              onclick="location.href='#contacts'"
               aria-label="Записаться на прием"
             >
               Записаться на прием
@@ -219,7 +219,7 @@
           <p class="call_text">​​​​​​​Запишитесь на бесплатную консультацию</p>
         </div>
         <button
-          class="button header__button call__button"
+          class="button header__button call__button  button__popup2"
           type="button"
           onclick="location.href='#'"
           aria-label="Заказать обратный звонок"
@@ -272,7 +272,7 @@
       </section>
 
       <!--  work -->
-      <section class="work">
+      <section class="work" id="practics">
         <h2 class="work__title">Направления работы</h2>
         <div class="about__left-side_border call__border"></div>
         <em class="work__text">
@@ -350,7 +350,7 @@
       </section>
 
       <!--  pros -->
-      <section class="pros">
+      <section class="pros" id="preferences">
         <h2 class="work__title">Преимущества</h2>
         <div class="about__left-side_border call__border"></div>
         <div class="pros__wrapper">
@@ -413,7 +413,7 @@
               <span class="form__input-error form-tel-error"></span>
             </label>
             <label class="form__field">
-              <textarea class="form__input form__textarea" name="message" id="profile-description" placeholder="Ваш вопрос *" maxlength="400"></textarea>
+              <textarea class="form__input form__textarea" name="message" id="profile-description" placeholder="Ваш вопрос" maxlength="400"></textarea>
               </textarea>
               <span class="form__input-error form-text-error"></span>
             </label>
@@ -427,7 +427,7 @@
       </section>
 
       <!--  contacts -->
-      <section class="work">
+      <section class="work" id="contacts">
         <h2 class="work__title">КОНТАКТЫ</h2>
         <div class="about__left-side_border call__border"></div>
         <p class="work__text">
@@ -524,6 +524,67 @@
           >+7-917-338-09-90</a
         >
       </div>
+
+   <!--  top-button -->
+   <a href="#header">
+    <div class="top-button"></div>
+   </a>
+
     </footer>
+
+
+
+       <!-- POPUP -->
+       <section id="popup" class="popup">
+        <div class="popup__container">
+          <button type="button" class="button button_type_close" aria-label="кнопка Закрыть форму"></button>
+          <form class="form" action="send_mail.php" name="form" method="POST">
+            <fieldset class="form__set">
+              <label class="form__field">
+                <input
+                  type="text"
+                  class="form__input"
+                  name="name"
+                  id="form-name"
+                  placeholder="Ваше имя *"
+                  minlength="2"
+                  maxlength="40"
+                  required
+                  pattern="[А-Яа-я]{1,50}|[А-Яа-я]{1,50}\s[А-Яа-я]{1,50}"
+                  title="Ваше имя русскими буквами (большими или маленькими)"
+                />
+                <span class="form__input-error form-name-error"></span>
+              </label>
+              <label class="form__field">
+                <input
+                  type="text"
+                  class="form__input"
+                  name="phone"
+                  id="profile-name"
+                  placeholder="Телефон *"
+                  minlength="11"
+                  maxlength="11"
+                  required
+                  pattern="[0-9]{11}"
+                  title="11 цифр без дефисов и пробелов. Пример: 89173481541"
+                />
+                <span class="form__input-error form-tel-error"></span>
+              </label>
+              <label class="form__field">
+                <textarea class="form__input form__textarea" name="message" id="profile-description" placeholder="Ваш вопрос" maxlength="400"></textarea>
+                </textarea>
+                <span class="form__input-error form-text-error"></span>
+              </label>
+              <button class="form__button" type="submit" aria-label="кнопка ОТПРАВИТЬ">
+                <span class=" ">ОТПРАВИТЬ</span>
+              </button>
+              <p class="form__submit-text">Спасибо за Ваше обращение! В течение дня я Вам перезвоню.</p>
+            </form>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+
+    <script src="app.js"></script>
   </body>
 </html>

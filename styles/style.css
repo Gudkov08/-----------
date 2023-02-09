@@ -2,6 +2,7 @@
 @import "fonts.css";
 @import "base.css";
 @import "vars.css";
+@import "./modules/page.css";
 @import "./modules/header.css";
 @import "./modules/main-screen.css";
 @import "./modules/about.css";

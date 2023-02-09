@@ -8,6 +8,7 @@
 
     $mail = new PHPMailer(true); /* Создаем объект MAIL */
     $mail->CharSet = "UTF-8"; /* Задаем кодировку UTF-8 */
+    $mail->setLanguage('ru', 'phpmailer/language/');
     $mail->IsHTML(true); /* Разрешаем работу с HTML */
 
     $name = $_POST["name"]; /* Принимаем имя пользователя с формы .. */
@@ -22,15 +23,15 @@
     $body = str_replace('%message%', $message, $body); // строку %message% на сообщение
 
     $mail->addAddress("andrey@stroi34.ru"); /* Здесь введите Email, куда отправлять */
-    $mail->setFrom($email);
-    $mail->Subject = "[Заявка с формы]"; /* Тема письма */
+    $mail->setFrom("andrey@stroi34.ru", 'Сайт Банкротство');
+    $mail->Subject = "[Заявка с сайта]"; /* Тема письма */
     $mail->MsgHTML($body);
 
     /* Проверяем отправлено ли сообщение */
     if (!$mail->send()) {
         $message = "Ошибка отправки";
     } else {
-        $message = "Данные отправлены!";
+        $message = "Спасибо за Ваше обращение! Мы свяжемся с Вами в течение дня.";
     }
 
     /* Возвращаем ответ */	
